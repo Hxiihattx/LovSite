@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovable Website | Premium Digital Design & Strategy Vienna</title>
+    <meta name="description" content="Lovable Website is a high-end digital agency in Vienna. We specialize in strategic web design, social media content, and full GDPR compliance for the Austrian market.">
+    <meta name="keywords" content="Web Design Vienna, Social Media Marketing Austria, DSGVO Web Design, Digital Strategy Vienna, Ihtasham Manzoor">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-dark-primary': '#111111',
+                        'bg-dark-secondary': '#1A1A1A',
+                        'bg-light-primary': '#FFFFFF',
+                        'bg-light-secondary': '#F4F5F7',
+                        'accent-green-deep': '#1B3B32',
+                        'accent-green-muted': '#5B6B66',
+                        'text-inverse': '#FFFFFF',
+                        'text-primary': '#111111',
+                        'text-secondary': '#666666',
+                        'border-subtle': '#E5E7EB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Manrope', 'system-ui', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'xl': '12px',
+                    },
+                    letterSpacing: {
+                        'tightest': '-0.02em',
+                        'wide': '0.05em',
+                    },
+                    lineHeight: {
+                        'heading-tight': '1.1',
+                        'body-relaxed': '1.6',
+                    },
+                    boxShadow: {
+                        'card-hover-lift': '0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05)',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --color-bg-dark-primary: #111111;
+            --color-bg-dark-secondary: #1A1A1A;
+            --color-bg-light-primary: #FFFFFF;
+            --color-bg-light-secondary: #F4F5F7;
+            --color-accent-green-deep: #1B3B32;
+            --color-accent-green-muted: #5B6B66;
+            --color-text-inverse: #FFFFFF;
+            --color-text-primary: #111111;
+            --color-text-secondary: #666666;
+            --color-border-subtle: #E5E7EB;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg-light-primary);
+            color: var(--color-text-primary);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Standardized Heading Styles for all sections and pages */
+        h1, h2 {
+            font-weight: 600 !important;
+            font-size: 1.75rem !important; /* Mobile */
+            line-height: 1.1 !important;
+        }
+
+        @media (min-width: 1024px) {
+            h1, h2 {
+                font-size: 2.25rem !important; /* Desktop */
+            }
+        }
+
+        /* Specific Override for Home Hero H1 */
+        .home-hero-h1 {
+            font-size: 2rem !important; /* Mobile */
+        }
+
+        @media (min-width: 1024px) {
+            .home-hero-h1 {
+                font-size: 3rem !important; /* Desktop */
+            }
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        img {
+            content-visibility: auto;
+            image-rendering: -webkit-optimize-contrast;
+        }
+
+        /* Custom transitions for Step Booking */
+        .step-entrance {
+            animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Custom underline for premium look */
+        .premium-link {
+            position: relative;
+            text-decoration: none;
+        }
+        .premium-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .premium-link:hover::after {
+            width: 100%;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
