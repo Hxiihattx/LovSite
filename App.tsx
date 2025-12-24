@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -13,6 +13,7 @@ import Insights from './pages/Insights';
 import InsightDetail from './pages/InsightDetail';
 import Booking from './pages/Booking';
 import FAQ from './pages/FAQ';
+import Preloader from './components/Preloader';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -23,8 +24,11 @@ const ScrollToTop = () => {
 };
 
 const App: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <HashRouter>
+      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <ScrollToTop />
       <Layout>
         <Routes>

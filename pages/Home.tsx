@@ -55,7 +55,7 @@ const Home: React.FC = () => {
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section */}
-      <section id="hero-section" className="relative h-screen min-h-[700px] bg-[#0a0a0a] overflow-hidden flex flex-col justify-end">
+      <section id="hero-section" className="relative h-screen min-h-[900px] md:min-h-[700px] bg-[#0a0a0a] overflow-hidden flex flex-col justify-end">
         <div className="absolute inset-0 z-0 h-full">
             <img 
                 src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=40&w=2000" 
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
                 loading="eager"
             />
             <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent"></div>
-            <div className="md:hidden absolute inset-0 bg-black/20"></div>
+            {/* Mobile overlay removed as requested */}
         </div>
         
         <div className="hidden md:flex relative z-10 max-w-7xl mx-auto px-12 w-full text-left items-center h-full">
@@ -72,7 +72,7 @@ const Home: React.FC = () => {
             <h1 className="home-hero-h1 tracking-tightest text-white leading-[1.05] mb-8 animate-fade-in-up">
               Digital Excellence for Austrian Business.
             </h1>
-            <p className="text-base lg:text-lg text-white/70 max-w-lg leading-relaxed mb-12 font-normal opacity-0 animate-fade-in-up delay-200" style={{ animationFillMode: 'forwards' }}>
+            <p className="text-base text-white/70 max-w-lg leading-relaxed mb-12 font-normal opacity-0 animate-fade-in-up delay-200" style={{ animationFillMode: 'forwards' }}>
               We combine Viennese aesthetics with strategic functionality. High-end, GDPR-compliant websites designed to lead your industry.
             </p>
             <div className="flex items-center gap-5 opacity-0 animate-fade-in-up delay-300" style={{ animationFillMode: 'forwards' }}>
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
             <h1 className="home-hero-h1 tracking-tight text-black leading-tight mb-6">
               Digital Excellence for Austrian Business.
             </h1>
-            <p className="text-gray-500 text-sm leading-[1.6] mb-10 font-medium">
+            <p className="text-gray-500 text-base leading-[1.6] mb-10 font-medium">
               Viennese aesthetics meet strategic functionality for high-performing digital assets that inspire trust.
             </p>
             
@@ -128,7 +128,7 @@ const Home: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-[15px] leading-tight mb-2">Conversion-first design</h3>
-                <p className="text-gray-600 leading-relaxed text-[14px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   We align every design decision with your broader business strategy to ensure practical, measurable growth.
                 </p>
               </div>
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-[15px] leading-tight mb-2">Austrian legal expertise</h3>
-                <p className="text-gray-600 leading-relaxed text-[14px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   Our team ensures full DSGVO/GDPR compliance across your digital assets, helping you navigate complex local regulations.
                 </p>
               </div>
@@ -152,7 +152,7 @@ const Home: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-[15px] leading-tight mb-2">Proven content results</h3>
-                <p className="text-gray-600 leading-relaxed text-[14px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   With successful social campaigns and viral content strategies, we deliver consistent community growth and brand authority.
                 </p>
               </div>
@@ -164,7 +164,7 @@ const Home: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-[15px] leading-tight mb-2">Trusted premium partner</h3>
-                <p className="text-gray-600 leading-relaxed text-[14px]">
+                <p className="text-gray-600 leading-relaxed text-base">
                   Leading Austrian businesses rely on us as their long-term advisors for mission-critical digital and creative decisions.
                 </p>
               </div>
@@ -179,7 +179,7 @@ const Home: React.FC = () => {
           <div className="reveal">
             <SectionBadge>The Edge</SectionBadge>
             <h2 className="tracking-tightest mb-8 leading-tight">Digital Craft. Austrian Precision.</h2>
-            <p className="text-lg text-gray-500 leading-relaxed mb-12 max-w-lg">
+            <p className="text-base text-gray-500 leading-relaxed mb-12 max-w-lg">
               We focus on high-impact digital solutions that move the needle for Austrian brands. Every project is handled with precision and a commitment to quality.
             </p>
             <Link to="/about" className="premium-link text-xs font-bold uppercase tracking-widest text-black">Learn our story</Link>
@@ -210,7 +210,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-1/3 md:sticky md:top-32 h-fit">
             <h2 className="tracking-tightest leading-none mb-6">Our Core Expertise.</h2>
-            <p className="text-gray-600 text-sm md:text-lg leading-relaxed max-w-xs">We focus on high-impact digital solutions that move the needle for Austrian brands.</p>
+            <p className="text-gray-600 text-base leading-relaxed max-w-xs">We focus on high-impact digital solutions that move the needle for Austrian brands.</p>
             <div className="mt-10">
                 <Button to="/booking" variant="ghost">Book Discovery Session</Button>
             </div>
@@ -252,7 +252,7 @@ const Home: React.FC = () => {
               >
                 <div>
                   <div className="text-3xl mb-6 opacity-20">"</div>
-                  <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-10 italic">{test.q}</p>
+                  <p className="text-base text-gray-700 leading-relaxed mb-10 italic">{test.q}</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">{test.n}</span>
@@ -291,7 +291,7 @@ const Home: React.FC = () => {
       <section id="cta-footer" className="bg-bg-light-secondary py-24 md:py-40 text-center relative overflow-hidden">
         <div className="max-w-3xl mx-auto px-6 relative z-10">
           <h2 className="tracking-tightest leading-none mb-10">Crafting your digital legacy.</h2>
-          <p className="text-base md:text-2xl text-gray-500 mb-12 max-w-xl mx-auto font-medium">Partner with Ihtasham and the team to build a presence that inspires.</p>
+          <p className="text-base md:text-xl text-gray-500 mb-12 max-w-xl mx-auto font-medium">Partner with Ihtasham and the team to build a presence that inspires.</p>
           <div className="flex flex-col md:flex-row justify-center gap-6">
             <Button to="/booking" className="px-12 py-5 text-lg shadow-2xl">Book Consultation</Button>
             <Button to="/portfolio" variant="ghost" className="px-12 py-5 text-lg border-gray-200">View Portfolio</Button>

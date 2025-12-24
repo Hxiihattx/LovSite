@@ -9,7 +9,7 @@ const WebDesign: React.FC = () => {
         <div className="max-w-4xl mx-auto px-6">
           <SectionBadge>Premium Expertise</SectionBadge>
           <h1 className="tracking-tightest mb-8 leading-tight animate-fade-in-up">Websites Engineered for Impact.</h1>
-          <p className="text-base md:text-xl text-gray-400 max-w-2xl mx-auto animate-fade-in-up delay-200" style={{ animationFillMode: 'forwards', opacity: 0 }}>
+          <p className="text-base text-gray-400 max-w-2xl mx-auto animate-fade-in-up delay-200" style={{ animationFillMode: 'forwards', opacity: 0 }}>
             High-end architecture meets Austrian legal precision. We build digital homes that are as secure as they are beautiful.
           </p>
           <div className="mt-12 animate-fade-in-up delay-300 opacity-0" style={{ animationFillMode: 'forwards' }}>
@@ -24,10 +24,10 @@ const WebDesign: React.FC = () => {
             <div>
               <SectionBadge>The Foundation</SectionBadge>
               <h2 className="tracking-tightest mb-8">Strategy-First Digital Design.</h2>
-              <p className="text-gray-600 leading-relaxed mb-6 text-lg">
+              <p className="text-base text-gray-600 leading-relaxed mb-6">
                 Most agencies start with colors and fonts. We start with your business model. We analyze user flows, heatmaps, and local competitor landscapes in Vienna and beyond to ensure every pixel serves a purpose.
               </p>
-              <p className="text-gray-500 leading-relaxed mb-8">
+              <p className="text-base text-gray-500 leading-relaxed mb-8">
                 Our approach ensures that your website isn't just a brochure, but a high-converting machine that works 24/7 to grow your authority in the Austrian market.
               </p>
               <ul className="space-y-4">
@@ -54,10 +54,10 @@ const WebDesign: React.FC = () => {
             <div className="order-1 md:order-2">
               <SectionBadge>Execution</SectionBadge>
               <h2 className="tracking-tightest mb-8">Secure Code. Zero Compromise.</h2>
-              <p className="text-gray-600 leading-relaxed mb-6 text-lg">
+              <p className="text-base text-gray-600 leading-relaxed mb-6">
                 Our development team utilizes the latest in headless technology, Webflow, and custom CMS structures to give you a site that is fast, editable, and future-proof.
               </p>
-              <p className="text-gray-500 leading-relaxed">
+              <p className="text-base text-gray-500 leading-relaxed">
                 Crucially, we handle the technical side of the DSGVO/GDPR. From cookie-less analytics to self-hosting fonts on Austrian servers, we ensure your site is a safe haven for your user's data.
               </p>
             </div>
@@ -84,7 +84,7 @@ const WebDesign: React.FC = () => {
                 <div className="text-5xl md:text-7xl font-bold text-gray-200 hidden md:block w-24 shrink-0 group-hover:text-black transition-colors">{step.id}</div>
                 <div className="md:pt-6">
                   <h3 className="text-xl md:text-2xl font-bold mb-4 tracking-tight">{step.title}</h3>
-                  <p className="text-sm md:text-lg text-gray-500 leading-relaxed">{step.desc}</p>
+                  <p className="text-base text-gray-500 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -95,7 +95,7 @@ const WebDesign: React.FC = () => {
       <section className="bg-white py-32 text-center border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="tracking-tightest mb-10 leading-tight">Your digital legacy starts here.</h2>
-          <p className="text-lg text-gray-500 mb-12 max-w-xl mx-auto">We specialize in turning static business ideas into dynamic digital powerhouses for the Austrian market.</p>
+          <p className="text-base text-gray-500 mb-12 max-w-xl mx-auto">We specialize in turning static business ideas into dynamic digital powerhouses for the Austrian market.</p>
           <Button to="/booking" className="px-16 py-5 text-lg">Discuss Your Website</Button>
         </div>
       </section>

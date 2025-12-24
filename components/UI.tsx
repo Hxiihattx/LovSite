@@ -2,6 +2,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Scribble Heart SVG Component matching the user's provided doodle
+export const ScribbleHeart = ({ color = "currentColor", className = "" }: { color?: string, className?: string }) => (
+  <svg 
+    viewBox="0 0 100 100" 
+    className={className} 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path 
+      d="M50 85c-1.5 0-3-.5-4.2-1.6C34.5 73.2 24.3 64.3 17.5 56.4 10.7 48.5 7 40.8 7 33.5c0-12.4 10.1-22.5 22.5-22.5 6.7 0 12.8 3 17 8.1 1.5 1.8 3 3.9 3.5 4.6.5-.7 2-2.8 3.5-4.6 4.2-5.1 10.3-8.1 17-8.1 12.4 0 22.5 10.1 22.5 22.5 0 7.3-3.7 15-10.5 22.9-6.8 7.9-17 16.8-28.3 27-1.2 1.1-2.7 1.6-4.2 1.6z" 
+      fill={color}
+    />
+    <path 
+      d="M32 25c-2 0-4 2-4 4s2 4 4 4 4-2 4-4-2-4-4-4zm36 0c-2 0-4 2-4 4s2 4 4 4 4-2 4-4-2-4-4-4z" 
+      fill="white" 
+      fillOpacity="0.1"
+    />
+    <path d="M25 35l10 10M65 35l10 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.2"/>
+  </svg>
+);
+
 interface ButtonProps {
   children: React.ReactNode;
   to?: string;
