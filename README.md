@@ -1,20 +1,7 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Autohaus Wien Nord / Kia Donaustadt
 
-# Run and deploy your AI Studio app
+Independent Vienna Auto template design proposal by Hassan Manzoor, not the official business website.
 
-This contains everything you need to run your app locally.
+Verified 15 October 2026: kia-wien-donaustadt.at (current branding, services, contact and legal details), kia.com/at/haendler/wien-nord/ (dealer identity and workshop hours), Google Maps (4.4/98, Robert Wagner excerpt, showroom photograph from March 2017). Original native logos from the current dealer website. Other photos are illustrative AI imagery.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1WK_JzttR_CMMmovMPBZqApzPpJl3hWFD
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Form validates locally and sends no data. No analytics or map embeds. Static HTML, local fonts and assets.
